@@ -1,4 +1,5 @@
 package com.pathashala;
+
 import org.junit.*;
 
 import static org.junit.Assert.assertEquals;
@@ -7,22 +8,31 @@ import static org.junit.Assert.assertEquals;
 public class FizzBuzzTest {
 
     @Test
-    public void shouldReturnFizzIfNumberIsThree(){
+    public void shouldReturnFizzIfNumberIsThree() {
         FizzBuzz fb = new FizzBuzz(3);
         String actualResult = FizzBuzz.multiple();
-        assertEquals("fizz",actualResult);
+        assertEquals("fizz", actualResult);
     }
+
     @Test
-    public void shouldReturnBuzzIfNumberIsFive(){
+    public void shouldReturnBuzzIfNumberIsFive() {
         FizzBuzz fb = new FizzBuzz(5);
         String actualResult = FizzBuzz.multiple();
-        assertEquals("buzz",actualResult);
+        assertEquals("buzz", actualResult);
     }
+
     @Test
-    public void shouldReturnFizzBuzzifMultipleOfThreeAndFive(){
+    public void shouldReturnFizzBuzzifMultipleOfThreeAndFive() {
         FizzBuzz fb = new FizzBuzz(15);
         String actualResult = FizzBuzz.multiple();
         assertEquals("fizzbuzz", actualResult);
+    }
+
+    @Test
+    public void shouldReturnBlaForOtherNumber() {
+        FizzBuzz fb = new FizzBuzz(1);
+        String actualResult = FizzBuzz.multiple();
+        assertEquals("bla", actualResult);
     }
 
 
