@@ -18,6 +18,12 @@ public class FizzBuzzTest {
         String actualResult = FizzBuzz.multiple();
         assertEquals("buzz",actualResult);
     }
+    @Test
+    public void shouldReturnFizzBuzzifMultipleOfThreeAndFive(){
+        FizzBuzz fb = new FizzBuzz(15);
+        String actualResult = FizzBuzz.multiple();
+        assertEquals("fizzbuzz", actualResult);
+    }
 
 
 }
