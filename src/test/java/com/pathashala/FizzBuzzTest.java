@@ -9,8 +9,14 @@ public class FizzBuzzTest {
     @Test
     public void shouldReturnFizzIfNumberIsThree(){
         FizzBuzz fb = new FizzBuzz(3);
-        String actualResult=FizzBuzz.multiple();
+        String actualResult = FizzBuzz.multiple();
         assertEquals("fizz",actualResult);
+    }
+    @Test
+    public void shouldReturnBuzzIfNumberIsFive(){
+        FizzBuzz fb = new FizzBuzz(5);
+        String actualResult = FizzBuzz.multiple();
+        assertEquals("buzz",actualResult);
     }
 
 
